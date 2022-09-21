@@ -75,6 +75,12 @@ export const Gallery = (props) => {
             <StyledGridItem>
               <ElementCard
                 img={NFTimg}
+                name="Nyx-92"
+                usr="@collector_name"
+                lastBid="2.45"
+                price="0.45 ETH"
+                mxn="$1,605.92"
+                profit="+12.45"
                 mini={miniImg}
                 width="460px"
                 height="560px"/>

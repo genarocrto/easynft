@@ -25,36 +25,36 @@ const ElementCard = (props) => {
                       <img src={props.mini} alt={props.altt ? props.altt : "img"}/>
                       <div style={{color:"rgba(255, 255, 255, 1)"}}>
                         <h2>
-                          Nyx-92
+                          {props.name}
                         </h2>
                         <p style={{marginTop:"-20px"}}>
-                          @collector_name
+                          {props.usr}
                         </p>
                       </div>
                     </div>
                     <div style={{gridColumn:"1", gridRow: "2/2", display: "flex", justifyContent:"space-between",}}>
                       <div style={{color:"rgba(255, 255, 255, 1)"}}>
                         <p>
-                          2.45 ETH
+                          {props.lastBid ? props.lastBid : props.floorPrice} ETH
                         </p>
                         <p style={{marginTop:"-15px"}}>
-                          latest Bid
+                          {props.lastBid ? "latest Bid" : "Floor price"}
                         </p>
                       </div>
                       <div style={{color:"rgba(255, 255, 255, 1)"}}>
                         <p>
-                          0.45 ETH
+                          {props.price ? props.price : null}
                         </p>
                         <p style={{marginTop:"-15px"}}>
-                          from
+                          {props.price ? "from" : null}
                         </p>
                       </div>
                       <div>
                         <p style={{color:"rgba(255, 255, 255, 1)"}}>
-                          $1,605.92 MXN
+                          {props.mxn} MXN
                         </p>
                         <p style={{color:"#9B6DB8", marginTop:"-15px"}}>
-                          +12.45%
+                          {props.profit}%
                         </p>
                       </div>
                     </div>

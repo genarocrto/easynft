@@ -37,6 +37,11 @@ const CardsContainer = () => {
             <GridItem>
                 <ElementCard
                     img={NFTexmpl}
+                    name="COOLGUYZZ"
+                    usr="Coolguyzz.io"
+                    floorPrice="0,05"
+                    mxn="$1,605.97"
+                    profit="-12.45"
                     width="235px"
                     height="281px"
                 />
