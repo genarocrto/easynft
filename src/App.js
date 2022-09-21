@@ -17,10 +17,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
           <Route path=":country" element={<Layout />}>
-            <Route path="" element={<Gallery />} />
+          {/* <Route path="" element={<Gallery />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>
+      <Gallery/>
     </>
   );
 }
