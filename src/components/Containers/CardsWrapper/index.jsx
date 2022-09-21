@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import ElementCard from '../../Card'
+
+import NFTexmpl from '../../../assets/nft-example.png'
 
 const CardsGridLayout = styled.section`
     display: grid;
@@ -26,13 +29,17 @@ const GridItem = styled.div`
 
 const CardsContainer = () => {
   return (
-    <div>
+    <div style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center",}}>
         <h1 style={{color:"#FFFFFF", fontSize:"47px"}}>
             Recomendados
         </h1>
         <CardsGridLayout>
             <GridItem>
-                
+                <ElementCard
+                    img={NFTexmpl}
+                    width="235px"
+                    height="281px"
+                />
             </GridItem>
         </CardsGridLayout>
     </div>
