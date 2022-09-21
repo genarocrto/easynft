@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Card } from '@mui/material';
 import { useParams } from 'react-router-dom';
-
+import miniImg from '../assets/miniImg.png'
 import NFTimg from '../assets/nft-image-example.png';
 
 const GalleryLayout = styled.div`
@@ -59,16 +59,18 @@ export const Gallery = (props) => {
             <StyledGridItem>
               <Card>
                 <figure>
-                  <img src={NFTimg} width="560px" height="660px"/>
+                  <img src={NFTimg} width="560px" height="660px" alt="nft-card-pic"/>
                   <gridFigCaption>
-                    <div style={{gridColumn:"1", gridRow: "1/2"}}>
-                      <img />
-                      <h6>
-                        Nyx-92
-                      </h6>
-                      <p>
-                        @collector_name
-                      </p>
+                    <div style={{gridColumn:"1", gridRow: "1/2", display:"flex", flexDirection:"row", alignItems:"center", gap: "20px" }}>
+                      <img src={miniImg} alt="mini-profile-pic"/>
+                      <div>
+                        <h6>
+                          Nyx-92
+                        </h6>
+                        <p>
+                          @collector_name
+                        </p>
+                      </div>
                     </div>
                     <div style={{gridColumn:"1", gridRow: "2/2", display: "flex", justifyContent:"space-between",}}>
                       <div>
@@ -91,7 +93,7 @@ export const Gallery = (props) => {
                         <p>
                           $1,605.92 MXN
                         </p>
-                        <p>
+                        <p style={{color:"#9B6DB8"}}>
                           +12.45%
                         </p>
                       </div>
