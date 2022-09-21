@@ -5,13 +5,14 @@ import { Card } from '@mui/material';
 import {PortalButton} from '../components/ui/PortalButton.jsx'
 import miniImg from '../assets/miniImg.png'
 import NFTimg from '../assets/nft-image-example.png';
+import CardsContainer from '../components/Containers/CardsWrapper/index.jsx';
 
 const GalleryLayout = styled.div`
   display: flex;
 	justify-content: center;
 	align-items: center;
   box-sizing: border-box;
-  background-color: #652ca8;
+  background-color: purple;
 `
 
 const Wrapper = styled.section`
@@ -123,7 +124,7 @@ export const Gallery = (props) => {
               </Card>
             </StyledGridItem>
           </DescriptorGridLayout>
-
+          <CardsContainer/>
         </Wrapper>
         
     </GalleryLayout>

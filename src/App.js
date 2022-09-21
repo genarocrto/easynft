@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -10,7 +11,7 @@ import { Gallery } from './gallery';
 
 function App() {
   return (
-    <>
+    <React.Fragment>
       <CssBaseline />
       <BrowserRouter>
         <Routes>
@@ -22,7 +23,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Gallery/>
-    </>
+    </React.Fragment>
   );
 }
 
